@@ -1,0 +1,10 @@
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreCompileInputs.cache
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
