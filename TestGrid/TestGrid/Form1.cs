@@ -34,8 +34,6 @@ namespace TestGrid
 
         private Graphics g;
 
-
-
         public Form1()
         {
             InitializeComponent();
@@ -68,12 +66,12 @@ namespace TestGrid
                 }
             }
 
-            foreach (Coord p in Pieces)
-            {
-                // if p.isred then red
-                // else black
-                DrawCircle(e, x, y, PieceSize, PieceSize);
-            }
+            //foreach (Coord p in Pieces)
+            //{
+            //    // if p.isred then red
+            //    // else black
+            //    DrawCircle(e, x, y, PieceSize, PieceSize);
+            //}
         }
 
         private bool getPiecePosition(ref int x, ref int y)
@@ -149,7 +147,6 @@ namespace TestGrid
         private void Form1_Move(object sender, EventArgs e)
         {
 
-
         }
 
         private void pictureBox2_DoubleClick(object sender, EventArgs e)
@@ -159,7 +156,12 @@ namespace TestGrid
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            pictureBox2.Visible = !pictureBox2.Visible;
+            //pictureBox2.Visible = !pictureBox2.Visible;
+        }
+
+        private void quit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
