@@ -17,3 +17,14 @@ D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssembly
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreCompileInputs.cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources

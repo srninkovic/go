@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestGrid.Properties;
 
 namespace TestGrid
 {
@@ -32,47 +33,18 @@ namespace TestGrid
         private bool Turn = true;
         private List<Coord> Pieces = new List<Coord>();
 
-        private Graphics g;
-
-        public Form1()
+         public Form1()
         {
             InitializeComponent();
-
-            pictureBox1.Controls.Add(pictureBox2);
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.BackColor = Color.Transparent;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            g = pictureBox1.CreateGraphics();
  
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-           base.OnPaint(e);
-
-            int x = 60;
-            int y = 60;
-
-            using (Pen Pen = new Pen(Color.Black))
-            {
-                for (int row = 0; row < 19; ++row)
-                {
-                    for (int col = 0; col < 19; ++col)
-                    {
-                        e.Graphics.DrawRectangle(Pen, x + (row * RectSize), y + (col * RectSize), RectSize, RectSize);
-                    }
-                }
-            }
-
-            //foreach (Coord p in Pieces)
-            //{
-            //    // if p.isred then red
-            //    // else black
-            //    DrawCircle(e, x, y, PieceSize, PieceSize);
-            //}
-        }
+          }
 
         private bool getPiecePosition(ref int x, ref int y)
         {
@@ -92,52 +64,29 @@ namespace TestGrid
         private void  Form1_MouseDown(object sender, MouseEventArgs e)
         {
             
-            int x = e.X;
-            int y = e.Y;
+            //int x = e.X;
+           // int y = e.Y;
 
-            if (!getPiecePosition(ref x,ref y))
-            {
-                return;
-            }
-  
-            Rectangle rect = new Rectangle();
-            PaintEventArgs arg = new PaintEventArgs(g, rect);
+           // if (!getPiecePosition(ref x,ref y))
+            //{
+            //    return;
+           // }
+  //
+           // Rectangle rect = new Rectangle();
+           // PaintEventArgs arg = new PaintEventArgs(g, rect);
 
             //if (x > 20 * RectSize || y > 20 * RectSize || x < 2 * RectSize || y < 2 * RectSize)
             //{
             //    return;
             //}
-            DrawCircle(arg, x, y, PieceSize, PieceSize);
+           // DrawCircle(arg, x, y, PieceSize, PieceSize);
 
            // pictureBox1.Refresh();
         }
 
         private void DrawCircle(PaintEventArgs e, int x, int y, int width, int height)
         {
-            Coord c;
-            c.x = x;
-            c.y = y;
-            c.IsRed = Turn;
-
-            var existsP = Pieces.Contains(c);
-
-            if (existsP)
-                return;
-
-            Pieces.Add(c);
-            Pen pen;
-
-            if (Turn)
-            {
-                pen = new Pen(Color.Red, 3);
-            } else 
-            {
-                pen = new Pen(Color.Black, 3);
-            }
-
-                 e.Graphics.DrawEllipse(pen, x - width / 2, y - height / 2, width, height);
-           Turn = !Turn;
-        }
+           }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -162,6 +111,79 @@ namespace TestGrid
         private void quit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cmdCreateBoard_Click(object sender, EventArgs e)
+        {
+            for (int idx = 0; idx != 19*20; ++idx)
+            {
+                PictureBox p = new PictureBox();
+                p.Parent = flGame;
+                p.Width = 50;
+                p.Height = 50;
+                p.Tag = idx;
+                p.Margin = new Padding(0);
+
+                if (idx == 0)
+                {
+                    p.Image = Resource1.LeftTop;
+                }
+                else if (idx < 19)
+                {
+                    p.Image = Resource1.Top;
+                }
+                else if (idx == 19)
+                {
+                    p.Image = Resource1.RightTop;
+                }
+                else if (idx % 20 == 0)
+                {
+                    p.Image = Resource1.Left;
+                }
+                else if (idx % 20 == 19)
+                {
+                    p.Image = Resource1.Right;
+                }
+                else
+                {
+                    p.MouseEnter += pictureBox1_MouseEnter;
+                    p.MouseLeave += pictureBox1_MouseLeave;
+                    p.Click += pictureBox1_Click;
+
+                    p.Image = Resource1.Empty;
+
+
+                }
+            }
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            ((PictureBox) sender).Image = Resource1.Selected;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            ((PictureBox)sender).Image = Resource1.Empty;
+
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            PictureBox pb = (PictureBox) sender;
+            Piece p = new Piece();
+
+            p.Index = (int)pb.Tag;
+            p.Color = Turn ? PieceColor.Red : PieceColor.Black;
+            pb.Image = Turn ? Resource1.Red : Resource1.Black;
+
+            pb.MouseEnter -= pictureBox1_MouseEnter;
+            pb.MouseLeave -= pictureBox1_MouseLeave;
+            pb.Click -= pictureBox1_Click;
+
+            Turn = !Turn;
+
         }
     }
 }
