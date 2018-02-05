@@ -8,3 +8,12 @@ C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreComp
 C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.exe
 C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
 C:\Users\Tycho\source\repos\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
