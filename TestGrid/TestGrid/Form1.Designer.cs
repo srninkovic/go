@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdCreateBoard = new System.Windows.Forms.Button();
             this.p1 = new System.Windows.Forms.Label();
             this.sp1 = new System.Windows.Forms.Label();
             this.p2 = new System.Windows.Forms.Label();
@@ -38,20 +38,19 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flGame = new System.Windows.Forms.FlowLayoutPanel();
-            this.cmdCreateBoard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // cmdCreateBoard
             // 
-            this.button1.Location = new System.Drawing.Point(1082, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "start/reset";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
+            this.cmdCreateBoard.Location = new System.Drawing.Point(1082, 128);
+            this.cmdCreateBoard.Name = "cmdCreateBoard";
+            this.cmdCreateBoard.Size = new System.Drawing.Size(75, 23);
+            this.cmdCreateBoard.TabIndex = 0;
+            this.cmdCreateBoard.Text = "start/reset";
+            this.cmdCreateBoard.UseVisualStyleBackColor = true;
+            this.cmdCreateBoard.Click += new System.EventHandler(this.cmdCreateBoard_Click);
+            this.cmdCreateBoard.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // p1
             // 
@@ -105,7 +104,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1637, 60);
+            this.panel1.Size = new System.Drawing.Size(1556, 60);
             this.panel1.TabIndex = 8;
             // 
             // panel3
@@ -132,22 +131,11 @@
             this.flGame.Size = new System.Drawing.Size(1000, 465);
             this.flGame.TabIndex = 10;
             // 
-            // cmdCreateBoard
-            // 
-            this.cmdCreateBoard.Location = new System.Drawing.Point(662, 81);
-            this.cmdCreateBoard.Name = "cmdCreateBoard";
-            this.cmdCreateBoard.Size = new System.Drawing.Size(75, 23);
-            this.cmdCreateBoard.TabIndex = 0;
-            this.cmdCreateBoard.Text = "button2";
-            this.cmdCreateBoard.UseVisualStyleBackColor = true;
-            this.cmdCreateBoard.Click += new System.EventHandler(this.cmdCreateBoard_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1637, 525);
-            this.Controls.Add(this.cmdCreateBoard);
+            this.ClientSize = new System.Drawing.Size(1556, 525);
             this.Controls.Add(this.flGame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -156,14 +144,13 @@
             this.Controls.Add(this.p2);
             this.Controls.Add(this.sp1);
             this.Controls.Add(this.p1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdCreateBoard);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            this.Move += new System.EventHandler(this.Form1_Move);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,7 +159,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdCreateBoard;
         private System.Windows.Forms.Label p1;
         private System.Windows.Forms.Label sp1;
         private System.Windows.Forms.Label p2;
@@ -182,7 +169,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flGame;
-        private System.Windows.Forms.Button cmdCreateBoard;
     }
 }
 

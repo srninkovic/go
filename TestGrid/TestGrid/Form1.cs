@@ -84,25 +84,6 @@ namespace TestGrid
            // pictureBox1.Refresh();
         }
 
-        private void DrawCircle(PaintEventArgs e, int x, int y, int width, int height)
-        {
-           }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Move(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             //pictureBox2.Visible = !pictureBox2.Visible;
@@ -115,12 +96,12 @@ namespace TestGrid
 
         private void cmdCreateBoard_Click(object sender, EventArgs e)
         {
-            for (int idx = 0; idx != 19*20; ++idx)
+            for (int idx = 0; idx != 21*20; ++idx)
             {
                 PictureBox p = new PictureBox();
                 p.Parent = flGame;
-                p.Width = 50;
-                p.Height = 50;
+                p.Width = 46;
+                p.Height = 46;
                 p.Tag = idx;
                 p.Margin = new Padding(0);
 
@@ -128,22 +109,36 @@ namespace TestGrid
                 {
                     p.Image = Resource1.LeftTop;
                 }
-                else if (idx < 19)
+                else if (idx < 20)
                 {
                     p.Image = Resource1.Top;
                 }
-                else if (idx == 19)
+                else if (idx == 20)
                 {
                     p.Image = Resource1.RightTop;
                 }
-                else if (idx % 20 == 0)
+                else if (idx == 399)
+                {
+                    p.Image = Resource1.LeftBot;
+                }
+                else if (idx == 419)
+                {
+                    p.Image = Resource1.RightBot;
+                }
+                else if (idx % 21 == 0)
                 {
                     p.Image = Resource1.Left;
                 }
-                else if (idx % 20 == 19)
+
+                else if (idx % 21 == 20)
                 {
                     p.Image = Resource1.Right;
                 }
+                else if (idx >= 400 && idx <= 418)
+                {
+                    p.Image = Resource1.Bot;
+                }
+                
                 else
                 {
                     p.MouseEnter += pictureBox1_MouseEnter;
