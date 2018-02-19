@@ -28,3 +28,6 @@ C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreCompileInpu
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
+D:\GIT Repos\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
