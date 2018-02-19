@@ -96,7 +96,7 @@ namespace TestGrid
 
         private void cmdCreateBoard_Click(object sender, EventArgs e)
         {
-            for (int idx = 0; idx != 21*20; ++idx)
+            for (int idx = 0; idx != 21*21; ++idx)
             {
                 PictureBox p = new PictureBox();
                 p.Parent = flGame;
@@ -117,11 +117,11 @@ namespace TestGrid
                 {
                     p.Image = Resource1.RightTop;
                 }
-                else if (idx == 399)
+                else if (idx == 420)
                 {
                     p.Image = Resource1.LeftBot;
                 }
-                else if (idx == 419)
+                else if (idx == 440)
                 {
                     p.Image = Resource1.RightBot;
                 }
@@ -129,12 +129,11 @@ namespace TestGrid
                 {
                     p.Image = Resource1.Left;
                 }
-
                 else if (idx % 21 == 20)
                 {
                     p.Image = Resource1.Right;
                 }
-                else if (idx >= 400 && idx <= 418)
+                else if (idx >= 421 && idx <= 439)
                 {
                     p.Image = Resource1.Bot;
                 }
