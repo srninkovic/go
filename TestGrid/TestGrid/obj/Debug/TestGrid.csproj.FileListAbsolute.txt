@@ -31,3 +31,10 @@ C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
 D:\GIT Repos\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+D:\GIT Repos\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+D:\GIT Repos\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
+D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache

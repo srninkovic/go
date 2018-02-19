@@ -14,8 +14,8 @@ namespace TestGrid
     public class Piece
     {
         public int Index { get; set; }
-        public int Row { get; set; }
-        public int Col { get; set; }
+        public int Row { get { return Index / 21; }  }
+        public int Col { get { return Index % 21; } }
 
         public bool IsEmpty { get; set; }
         public PieceColor Color { get; set; }

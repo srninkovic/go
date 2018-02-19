@@ -33,6 +33,8 @@ namespace TestGrid
         private bool Turn = true;
         private List<Coord> Pieces = new List<Coord>();
 
+        private Board GameBoard = null;
+
          public Form1()
         {
             InitializeComponent();
@@ -96,6 +98,35 @@ namespace TestGrid
 
         private void cmdCreateBoard_Click(object sender, EventArgs e)
         {
+            GameBoard = null;
+            GameBoard = new Board();
+
+            for (int idx = 0; idx != 21; ++idx)
+            {
+                PictureBox p = new PictureBox();
+                p.Parent = flTop;
+                p.Width = 46;
+                p.Height = 46;
+                p.Margin = new Padding(0);
+                Bitmap screen = (Bitmap)Resource1.ResourceManager.GetObject("Label" + idx);
+
+                p.Image = screen;
+            }
+
+            for (int idx = 0; idx != 21; ++idx)
+            {
+                PictureBox p = new PictureBox();
+                p.Parent = flLeft;
+                p.Width = 46;
+                p.Height = 46;
+                p.Margin = new Padding(0);
+                Bitmap screen = (Bitmap)Resource1.ResourceManager.GetObject("Label" + idx);
+
+                p.Image = screen;
+
+            }
+
+
             for (int idx = 0; idx != 21*21; ++idx)
             {
                 PictureBox p = new PictureBox();
@@ -153,7 +184,17 @@ namespace TestGrid
 
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
-            ((PictureBox) sender).Image = Resource1.Selected;
+            PictureBox pb = (PictureBox)sender;
+
+            pb.Image = Resource1.Selected;
+
+            Piece p = new Piece();
+
+            p.Index = (int)pb.Tag;
+
+            lblPos.Text = "Row: " + p.Row.ToString() + " col: " + p.Col.ToString();
+
+            p = null;
         }
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
@@ -169,12 +210,15 @@ namespace TestGrid
             Piece p = new Piece();
 
             p.Index = (int)pb.Tag;
+
             p.Color = Turn ? PieceColor.Red : PieceColor.Black;
             pb.Image = Turn ? Resource1.Red : Resource1.Black;
 
             pb.MouseEnter -= pictureBox1_MouseEnter;
             pb.MouseLeave -= pictureBox1_MouseLeave;
             pb.Click -= pictureBox1_Click;
+
+            GameBoard.PlacePiece(Turn, p);
 
             Turn = !Turn;
 
