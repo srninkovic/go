@@ -132,5 +132,59 @@
   <ItemGroup>
     <None Include="Resources\Label2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label18.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
