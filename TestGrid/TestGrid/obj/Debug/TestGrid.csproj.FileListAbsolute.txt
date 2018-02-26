@@ -38,3 +38,13 @@ D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache

@@ -204,6 +204,8 @@ namespace TestGrid
         }
 
 
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox) sender;
@@ -218,10 +220,15 @@ namespace TestGrid
             pb.MouseLeave -= pictureBox1_MouseLeave;
             pb.Click -= pictureBox1_Click;
 
-            GameBoard.PlacePiece(Turn, p);
+            //GameBoard.PlacePiece(Turn, p);
 
             Turn = !Turn;
 
+        }
+
+        private void Restart_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
