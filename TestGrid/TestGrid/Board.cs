@@ -4,9 +4,12 @@ namespace TestGrid
 {
     internal class Board
     {
-        //internal void PlacePiece(bool turn, Piece p)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        struct Neigbours
+        {
+            //Piece N = null;
+            //Piece E = null;
+            //Piece S = null;
+            //Piece W = null;
+        }
     }
 }

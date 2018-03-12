@@ -10,9 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestGrid.Properties;
+using System.Data.SQLite;
+
 
 namespace TestGrid
 {
+
 
     struct Coord : IEquatable<Coord>
     {
@@ -203,9 +206,6 @@ namespace TestGrid
 
         }
 
-
-
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox) sender;
@@ -229,6 +229,11 @@ namespace TestGrid
         private void Restart_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void piecescount_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

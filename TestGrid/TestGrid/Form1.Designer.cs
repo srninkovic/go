@@ -42,18 +42,20 @@
             this.flGame = new System.Windows.Forms.FlowLayoutPanel();
             this.lblPos = new System.Windows.Forms.Label();
             this.Reset = new System.Windows.Forms.Button();
+            this.piecescount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdCreateBoard
             // 
+            this.cmdCreateBoard.BackColor = System.Drawing.Color.Gainsboro;
             this.cmdCreateBoard.Location = new System.Drawing.Point(1082, 128);
             this.cmdCreateBoard.Name = "cmdCreateBoard";
             this.cmdCreateBoard.Size = new System.Drawing.Size(75, 23);
             this.cmdCreateBoard.TabIndex = 0;
             this.cmdCreateBoard.Text = "Start";
-            this.cmdCreateBoard.UseVisualStyleBackColor = true;
+            this.cmdCreateBoard.UseVisualStyleBackColor = false;
             this.cmdCreateBoard.Click += new System.EventHandler(this.cmdCreateBoard_Click);
             this.cmdCreateBoard.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
@@ -117,7 +119,7 @@
             // 
             this.flTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flTop.Location = new System.Drawing.Point(60, 0);
-            this.flTop.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.flTop.Margin = new System.Windows.Forms.Padding(1);
             this.flTop.Name = "flTop";
             this.flTop.Size = new System.Drawing.Size(1331, 60);
             this.flTop.TabIndex = 1;
@@ -143,7 +145,7 @@
             // 
             this.flLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flLeft.Location = new System.Drawing.Point(0, 0);
-            this.flLeft.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.flLeft.Margin = new System.Windows.Forms.Padding(1);
             this.flLeft.Name = "flLeft";
             this.flLeft.Size = new System.Drawing.Size(60, 621);
             this.flLeft.TabIndex = 2;
@@ -177,11 +179,22 @@
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.Click += new System.EventHandler(this.Restart_Click);
             // 
+            // piecescount
+            // 
+            this.piecescount.AutoSize = true;
+            this.piecescount.Location = new System.Drawing.Point(1082, 346);
+            this.piecescount.Name = "piecescount";
+            this.piecescount.Size = new System.Drawing.Size(65, 13);
+            this.piecescount.TabIndex = 13;
+            this.piecescount.Text = "piecescount";
+            this.piecescount.Click += new System.EventHandler(this.piecescount_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1391, 681);
+            this.Controls.Add(this.piecescount);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.lblPos);
             this.Controls.Add(this.flGame);
@@ -222,6 +235,7 @@
         private System.Windows.Forms.FlowLayoutPanel flLeft;
         private System.Windows.Forms.Label lblPos;
         private System.Windows.Forms.Button Reset;
+        private System.Windows.Forms.Label piecescount;
     }
 }
 

@@ -48,3 +48,11 @@ D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.EF6.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.Linq.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.xml
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.xml
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.xml
