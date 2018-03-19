@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestGrid.Properties;
 using System.Data.SQLite;
+using Newtonsoft.Json;
+using System.IO;
 
 
 namespace TestGrid
 {
-
-
     struct Coord : IEquatable<Coord>
     {
         public int x;
@@ -33,7 +33,9 @@ namespace TestGrid
     {
         private const int RectSize = 50;
         private int PieceSize = RectSize- 10;
-        private bool Turn = true;
+
+        private Board myBoard = new Board();
+
         private List<Coord> Pieces = new List<Coord>();
 
         private Board GameBoard = null;
@@ -179,8 +181,6 @@ namespace TestGrid
                     p.Click += pictureBox1_Click;
 
                     p.Image = Resource1.Empty;
-
-
                 }
             }
         }
@@ -213,8 +213,8 @@ namespace TestGrid
 
             p.Index = (int)pb.Tag;
 
-            p.Color = Turn ? PieceColor.Red : PieceColor.Black;
-            pb.Image = Turn ? Resource1.Red : Resource1.Black;
+            p.Color = myBoard.Turn ? PieceColor.Red : PieceColor.Black;
+            pb.Image = myBoard.Turn ? Resource1.Red : Resource1.Black;
 
             pb.MouseEnter -= pictureBox1_MouseEnter;
             pb.MouseLeave -= pictureBox1_MouseLeave;
@@ -222,7 +222,8 @@ namespace TestGrid
 
             //GameBoard.PlacePiece(Turn, p);
 
-            Turn = !Turn;
+            
+            myBoard.ChangeTurn();
 
         }
 
@@ -231,9 +232,34 @@ namespace TestGrid
             Application.Restart();
         }
 
-        private void piecescount_Click(object sender, EventArgs e)
-        {
+        Settings d_configuration = null; // container for the system settings
+        string CONFIG = Directory.GetCurrentDirectory() + "\\config.json";
 
+        private void saveGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // list of database connection arguments and 
+            // a few settings to test for diffent types
+            Settings conf = new Settings
+            {
+                setting_1 = "stringvalue",
+                setting_2 = 2,
+                setting_3 = 3.123456789,
+                setting_4 = 4.123456789f,
+                setting_5 = 'c',
+                setting_6 = true
+            };
+
+            // serialize JSON to a string and then write string to a file
+            // File.WriteAllText(@"c:\tmp\configuration.json", JsonConvert.SerializeObject(conf));
+
+            // serialize JSON directly to a file
+            using (StreamWriter file = File.CreateText(CONFIG))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, conf);
+            }
+
+            MessageBox.Show("Action Completed");
         }
     }
 }

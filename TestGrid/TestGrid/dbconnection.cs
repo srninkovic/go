@@ -11,9 +11,10 @@ namespace TestGrid
     {
         private SQLiteConnection sqlite;
 
-        public dbconnection()
+        private void dbcon()
         {
             sqlite = new SQLiteConnection("Data Source=C:/Users/power_000/Desktop/test.db"); //path to sqlite file
         }
+
     }
 }
