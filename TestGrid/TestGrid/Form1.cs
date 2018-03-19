@@ -215,6 +215,7 @@ namespace TestGrid
 
             p.Index = (int)pb.Tag;
 
+
             p.Color = myBoard.Turn ? PieceColor.Red : PieceColor.Black;
             pb.Image = myBoard.Turn ? Resource1.Red : Resource1.Black;
 
@@ -230,7 +231,6 @@ namespace TestGrid
         }
 
         string CONFIG = Directory.GetCurrentDirectory() + "\\config.json";
-        string CONFIG2 = Directory.GetCurrentDirectory() + "\\config2.json";
 
 
         private void Restart_Click(object sender, EventArgs e)
@@ -244,7 +244,7 @@ namespace TestGrid
                 d_configuration = (Board)serializer.Deserialize(file, typeof(Board));
             }
 
-            using (StreamWriter file = File.CreateText(CONFIG2))
+            using (StreamWriter file = File.CreateText(CONFIG))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, d_configuration);

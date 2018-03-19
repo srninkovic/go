@@ -15,7 +15,6 @@ namespace TestGrid
 
         public Board()
         {
-            Turn = false;
             
         }
 
