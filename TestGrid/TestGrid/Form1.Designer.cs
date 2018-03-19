@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.flGame = new System.Windows.Forms.FlowLayoutPanel();
+            this.loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,7 +65,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveGameToolStripMenuItem});
+            this.saveGameToolStripMenuItem,
+            this.loadGameToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
@@ -73,7 +75,7 @@
             // 
             this.saveGameToolStripMenuItem.Name = "saveGameToolStripMenuItem";
             this.saveGameToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.saveGameToolStripMenuItem.Text = "Save Game";
             this.saveGameToolStripMenuItem.Click += new System.EventHandler(this.saveGameToolStripMenuItem_Click);
             // 
@@ -217,6 +219,14 @@
             this.flGame.Size = new System.Drawing.Size(1000, 597);
             this.flGame.TabIndex = 27;
             // 
+            // loadGameToolStripMenuItem
+            // 
+            this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
+            this.loadGameToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.loadGameToolStripMenuItem.Text = "Load Game";
+            this.loadGameToolStripMenuItem.Click += new System.EventHandler(this.loadGameToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +281,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flLeft;
         private System.Windows.Forms.FlowLayoutPanel flGame;
+        private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem;
     }
 }
 

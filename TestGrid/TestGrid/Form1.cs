@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestGrid.Properties;
-using System.Data.SQLite;
+//using System.Data.SQLite;
 using Newtonsoft.Json;
 using System.IO;
 
@@ -103,8 +103,8 @@ namespace TestGrid
 
         private void cmdCreateBoard_Click(object sender, EventArgs e)
         {
-            GameBoard = null;
-            GameBoard = new Board();
+            //GameBoard = null;
+            //GameBoard = new Board();
 
             for (int idx = 0; idx != 21; ++idx)
             {
@@ -138,7 +138,7 @@ namespace TestGrid
                 p.Parent = flGame;
                 p.Width = 46;
                 p.Height = 46;
-                p.Tag = idx;
+                p.Tag = -1;
                 p.Margin = new Padding(0);
 
                 if (idx == 0)
@@ -181,6 +181,8 @@ namespace TestGrid
                     p.Click += pictureBox1_Click;
 
                     p.Image = Resource1.Empty;
+
+                    p.Tag = idx;
                 }
             }
         }
@@ -220,35 +222,43 @@ namespace TestGrid
             pb.MouseLeave -= pictureBox1_MouseLeave;
             pb.Click -= pictureBox1_Click;
 
-            //GameBoard.PlacePiece(Turn, p);
+            myBoard.PlacePiece(p);
 
             
             myBoard.ChangeTurn();
 
         }
 
+        string CONFIG = Directory.GetCurrentDirectory() + "\\config.json";
+        string CONFIG2 = Directory.GetCurrentDirectory() + "\\config2.json";
+
+
         private void Restart_Click(object sender, EventArgs e)
         {
             //Application.Restart();
+            Board d_configuration = null; // container for the system settings
+
             using (StreamReader file = File.OpenText(CONFIG))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 d_configuration = (Board)serializer.Deserialize(file, typeof(Board));
             }
+
+            using (StreamWriter file = File.CreateText(CONFIG2))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, d_configuration);
+            }
             MessageBox.Show("Action Completed");
         }
 
-        Board d_configuration = null; // container for the system settings
-        string CONFIG = Directory.GetCurrentDirectory() + "\\config.json";
+       
 
         private void saveGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // list of database connection arguments and 
             // a few settings to test for diffent types
-            Board conf = new Board
-            { 
-                Turn = true 
-            };
+
 
             // serialize JSON to a string and then write string to a file
             // File.WriteAllText(@"c:\tmp\configuration.json", JsonConvert.SerializeObject(conf));
@@ -257,10 +267,56 @@ namespace TestGrid
             using (StreamWriter file = File.CreateText(CONFIG))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, conf);
+                serializer.Serialize(file, myBoard);
             }
 
-            MessageBox.Show("Action Completed");
+
+
+        }
+
+        private void loadGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var con in flGame.Controls)
+            {
+                PictureBox pb =  con as PictureBox;
+
+                if (pb != null && (int)pb.Tag != -1)
+                {
+                    pb.Image = Resource1.Empty;
+
+                    pb.MouseEnter += pictureBox1_MouseEnter;
+                    pb.MouseLeave += pictureBox1_MouseLeave;
+                    pb.Click += pictureBox1_Click;
+                }
+
+            }
+            // reset current board
+
+            myBoard = null;
+
+            using (StreamReader file = File.OpenText(CONFIG))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                myBoard = (Board)serializer.Deserialize(file, typeof(Board));
+            }
+
+            foreach (var pcs in myBoard.Pieces)
+            {
+                foreach (var con in flGame.Controls)
+                {
+                    PictureBox pb = con as PictureBox;
+
+                    if (pb != null && (int)pb.Tag == pcs.Index)
+                    {
+                        pb.Image = pcs.Color == PieceColor.Red ? Resource1.Red : Resource1.Black;
+
+                        pb.MouseEnter -= pictureBox1_MouseEnter;
+                        pb.MouseLeave -= pictureBox1_MouseLeave;
+                        pb.Click -= pictureBox1_Click;
+                    }
+                }
+                 
+            }
         }
     }
 }

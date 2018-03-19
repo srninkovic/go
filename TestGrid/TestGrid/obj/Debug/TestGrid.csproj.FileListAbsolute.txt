@@ -17,17 +17,6 @@ D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssembly
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
 D:\C-sharp\gonieuw\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
-C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
-C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
-C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreCompileInputs.cache
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
-C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
 D:\GIT Repos\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
 D:\GIT Repos\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
@@ -58,3 +47,20 @@ D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.xml
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.dll
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Form1.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Properties.Resources.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.Resource1.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.GenerateResource.Cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csproj.CoreCompileInputs.cache
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe.config
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.exe
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\TestGrid.pdb
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\EntityFramework.dll
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\EntityFramework.xml
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache
