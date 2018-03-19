@@ -56,3 +56,5 @@ D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.Linq.dl
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.xml
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\EntityFramework.SqlServer.xml
 D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\System.Data.SQLite.xml
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.dll
+D:\C-sharp\boardgamego\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.xml

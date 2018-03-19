@@ -12,7 +12,7 @@ namespace TestGrid
             //Piece W = null;
         }
 
-        public bool Turn { get; private set; }
+        public bool Turn { get; set; }
 
         public void ChangeTurn()
         {

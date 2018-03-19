@@ -229,24 +229,25 @@ namespace TestGrid
 
         private void Restart_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            //Application.Restart();
+            using (StreamReader file = File.OpenText(CONFIG))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                d_configuration = (Board)serializer.Deserialize(file, typeof(Board));
+            }
+            MessageBox.Show("Action Completed");
         }
 
-        Settings d_configuration = null; // container for the system settings
+        Board d_configuration = null; // container for the system settings
         string CONFIG = Directory.GetCurrentDirectory() + "\\config.json";
 
         private void saveGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // list of database connection arguments and 
             // a few settings to test for diffent types
-            Settings conf = new Settings
-            {
-                setting_1 = "stringvalue",
-                setting_2 = 2,
-                setting_3 = 3.123456789,
-                setting_4 = 4.123456789f,
-                setting_5 = 'c',
-                setting_6 = true
+            Board conf = new Board
+            { 
+                Turn = true 
             };
 
             // serialize JSON to a string and then write string to a file
