@@ -43,6 +43,7 @@ namespace TestGrid
          public Form1()
         {
             InitializeComponent();
+            this.BackgroundImage = Resource1.pattern;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -283,6 +284,10 @@ namespace TestGrid
                 if (pb != null && (int)pb.Tag != -1)
                 {
                     pb.Image = Resource1.Empty;
+
+                    pb.MouseEnter -= pictureBox1_MouseEnter;
+                    pb.MouseLeave -= pictureBox1_MouseLeave;
+                    pb.Click -= pictureBox1_Click;
 
                     pb.MouseEnter += pictureBox1_MouseEnter;
                     pb.MouseLeave += pictureBox1_MouseLeave;
