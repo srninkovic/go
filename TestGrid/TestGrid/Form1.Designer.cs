@@ -46,6 +46,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.flGame = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -130,7 +131,7 @@
             this.sp2.AutoSize = true;
             this.sp2.BackColor = System.Drawing.Color.Transparent;
             this.sp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sp2.Location = new System.Drawing.Point(1158, 614);
+            this.sp2.Location = new System.Drawing.Point(1158, 728);
             this.sp2.Name = "sp2";
             this.sp2.Size = new System.Drawing.Size(317, 54);
             this.sp2.TabIndex = 18;
@@ -138,21 +139,21 @@
             // 
             // p2
             // 
-            this.p2.AutoSize = true;
             this.p2.BackColor = System.Drawing.Color.Transparent;
-            this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p2.Location = new System.Drawing.Point(1203, 729);
+            this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p2.Location = new System.Drawing.Point(1159, 665);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(225, 63);
+            this.p2.Size = new System.Drawing.Size(316, 63);
             this.p2.TabIndex = 17;
             this.p2.Text = "Player 2";
+            this.p2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sp1
             // 
             this.sp1.AutoSize = true;
             this.sp1.BackColor = System.Drawing.Color.Transparent;
             this.sp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sp1.Location = new System.Drawing.Point(1158, 478);
+            this.sp1.Location = new System.Drawing.Point(1158, 454);
             this.sp1.Name = "sp1";
             this.sp1.Size = new System.Drawing.Size(317, 54);
             this.sp1.TabIndex = 16;
@@ -160,14 +161,14 @@
             // 
             // p1
             // 
-            this.p1.AutoSize = true;
             this.p1.BackColor = System.Drawing.Color.Transparent;
-            this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p1.Location = new System.Drawing.Point(1203, 358);
+            this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p1.Location = new System.Drawing.Point(1159, 391);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(225, 63);
+            this.p1.Size = new System.Drawing.Size(311, 63);
             this.p1.TabIndex = 15;
             this.p1.Text = "Player 1";
+            this.p1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmdCreateBoard
             // 
@@ -197,12 +198,12 @@
             // lblPos
             // 
             this.lblPos.AutoSize = true;
-            this.lblPos.Location = new System.Drawing.Point(1076, 233);
+            this.lblPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPos.Location = new System.Drawing.Point(1295, 96);
             this.lblPos.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPos.Name = "lblPos";
-            this.lblPos.Size = new System.Drawing.Size(35, 13);
+            this.lblPos.Size = new System.Drawing.Size(0, 20);
             this.lblPos.TabIndex = 23;
-            this.lblPos.Text = "label1";
             // 
             // panel2
             // 
@@ -230,11 +231,21 @@
             this.flGame.Size = new System.Drawing.Size(1000, 749);
             this.flGame.TabIndex = 27;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1218, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1574, 833);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.flGame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -273,9 +284,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button quit;
         private System.Windows.Forms.Label sp2;
-        private System.Windows.Forms.Label p2;
         private System.Windows.Forms.Label sp1;
-        private System.Windows.Forms.Label p1;
         private System.Windows.Forms.Button cmdCreateBoard;
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Label lblPos;
@@ -283,6 +292,9 @@
         private System.Windows.Forms.FlowLayoutPanel flLeft;
         private System.Windows.Forms.FlowLayoutPanel flGame;
         private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label p1;
+        public System.Windows.Forms.Label p2;
     }
 }
 

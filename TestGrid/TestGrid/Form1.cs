@@ -104,8 +104,15 @@ namespace TestGrid
 
         private void cmdCreateBoard_Click(object sender, EventArgs e)
         {
+            frmPlayerNames frm = new frmPlayerNames(this);
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog();
+
+            frm = null;
+            
             //GameBoard = null;
             //GameBoard = new Board();
+            label1.Text = "Position :";
 
             for (int idx = 0; idx != 21; ++idx)
             {
