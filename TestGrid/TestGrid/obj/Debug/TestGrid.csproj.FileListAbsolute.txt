@@ -60,3 +60,4 @@ C:\Projects\C# Go\go\TestGrid\TestGrid\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.exe
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.pdb
 C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.frmPlayerNames.resources
+C:\Projects\C# Go\go\TestGrid\TestGrid\obj\Debug\TestGrid.csprojResolveAssemblyReference.cache

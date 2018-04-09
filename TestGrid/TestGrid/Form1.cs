@@ -52,7 +52,8 @@ namespace TestGrid
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-          }
+
+        }
 
         private bool getPiecePosition(ref int x, ref int y)
         {
